@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiral Shah - Full Stack Web Developer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor hidden-mobile"></div>
+
+    <!-- Navbar -->
+    <header id="navbar" class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-accent">Hiral</span><span class="logo-text">Shah.</span>
+            </a>
+            
+            <!-- Desktop Nav -->
+            <nav class="desktop-nav">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                    <i data-feather="sun" class="sun-icon"></i>
+                    <i data-feather="moon" class="moon-icon"></i>
+                </button>
+            </nav>
+
+            <!-- Mobile Toggle -->
+            <div class="mobile-toggle-group">
+                <button id="theme-toggle-mobile" class="theme-btn" aria-label="Toggle Theme">
+                    <i data-feather="sun" class="sun-icon"></i>
+                    <i data-feather="moon" class="moon-icon"></i>
+                </button>
+                <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open Menu">
+                    <i data-feather="menu" class="menu-icon"></i>
+                    <i data-feather="x" class="close-icon hidden"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu hidden">
+            <ul class="mobile-nav-links">
+                <li><a href="#home" class="mobile-nav-link active">Home</a></li>
+                <li><a href="#about" class="mobile-nav-link">About</a></li>
+                <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+                <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+                <li><a href="#education" class="mobile-nav-link">Education</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+
+            <div class="container hero-container">
+                <div class="hero-content reveal">
+                    <h2 class="greeting">Hello, I'm</h2>
+                    <h1 class="name">Hiral Shah</h1>
+                    <div class="typing-container">
+                        <span class="role text-gradient">Full Stack Web Developer</span>
+                    </div>
+                    <p class="tagline">
+                        Building responsive, scalable, and user-friendly web applications using modern web technologies.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects <i data-feather="arrow-right"></i></a>
+                        <a href="./resume.hiral.pdf" target="_blank" class="btn btn-glass"><i data-feather="download"></i> Download Resume</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/hiral1609" target="_blank"><i data-feather="github"></i></a>
+                        <a href="https://www.linkedin.com/in/hiral-shah-68589033a/" target="_blank"><i data-feather="linkedin"></i></a>
+                        <a href="mailto:hiralshah0916@gmail.com"><i data-feather="mail"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image reveal-right">
+                    <div class="image-wrapper">
+                        <img src="./images/profile.jpeg" alt="Hiral Shah" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>About <span class="text-gradient">Me</span></h2>
+                    <div class="header-line"></div>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-text-wrapper reveal-left">
+                        <div class="glass-card about-card">
+                            <h3>Passionate Developer</h3>
+                            <p>I am a passionate Full Stack Web Developer with a strong foundation in frontend and backend development. I enjoy creating responsive, scalable, and user-friendly web applications using modern technologies.</p>
+                            <p>I continuously improve my problem-solving skills through coding practice and enjoy learning new technologies. My goal is to build digital products that offer both exceptional user experiences and robust performance.</p>
+                        </div>
+                    </div>
+                    <div class="about-stats reveal-right">
+                        <div class="stat-card glass-card">
+                            <h4 class="text-gradient">50+</h4>
+                            <p>LeetCode Problems</p>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <h4 class="text-gradient">3+</h4>
+                            <p>Major Projects</p>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <h4 class="text-gradient">4</h4>
+                            <p>Tech Stack Layers</p>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <h4 class="text-gradient">2027</h4>
+                            <p>Graduation Year</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section bg-alternate">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Technical <span class="text-gradient">Skills</span></h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Programming Languages -->
+                    <div class="skill-category glass-card reveal">
+                        <h3>Programming & Core</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info"><span>JavaScript</span><span>85%</span></div>
+                                <div class="progress-bar"><div class="progress" data-width="85%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Data Structure & Algorithm</span><span>80%</span></div>
+                                <div class="progress-bar"><div class="progress" data-width="80%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Operating System</span><span>85%</span></div>
+                                <div class="progress-bar"><div class="progress" data-width="85%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Web Development -->
+                    <div class="skill-category glass-card reveal" style="transition-delay: 100ms;">
+                        <h3>Web Development</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info"><span>HTML5 / CSS3</span><span>90%</span></div>
+                                <div class="progress-bar"><div class="progress" data-width="90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Node.js</span><span>75%</span></div>
+                                <div class="progress-bar"><div class="progress" data-width="75%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Express.js</span><span>75%</span></div>
+                                <div class="progress-bar"><div class="progress" data-width="75%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tools & Platforms -->
+                    <div class="skill-category glass-card reveal" style="transition-delay: 200ms;">
+                        <h3>Tools & Platforms</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info"><span>MongoDB (Atlas)</span><span>75%</span></div>
+                                <div class="progress-bar"><div class="progress" data-width="75%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Git & GitHub</span><span>85%</span></div>
+                                <div class="progress-bar"><div class="progress" data-width="85%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Vercel / Render</span><span>80%</span></div>
+                                <div class="progress-bar"><div class="progress" data-width="80%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Featured <span class="text-gradient">Projects</span></h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-card reveal featured">
+                        <div class="project-img">
+                            <div class="overlay"></div>
+                            <span>PL</span>
+                        </div>
+                        <div class="project-content">
+                            <span class="badge">Featured</span>
+                            <h3>PlacementGPT</h3>
+                            <p>An AI-powered placement preparation platform that helps students practice interview questions, improve aptitude and coding skills, and prepare for campus placements through an interactive and user-friendly interface.</p>
+                            <div class="tech-tags">
+                                <span>Node.js</span><span>Express.js</span><span>MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/hiral1609" target="_blank"><i data-feather="github"></i> Code</a>
+                                <a href="https://hiral1609.github.io/PlacementGPT-/" target="_blank"><i data-feather="external-link"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="project-card glass-card reveal" style="transition-delay: 100ms;">
+                        <div class="project-img">
+                            <div class="overlay"></div>
+                            <span>AM</span>
+                        </div>
+                        <div class="project-content">
+                            <h3>Amazon Clone</h3>
+                            <p>Developed a responsive Amazon-inspired e-commerce frontend featuring product listings, search functionality, shopping cart interface, responsive design, and modern UI components.</p>
+                            <div class="tech-tags">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                            </div>
+                            <div class="project-links mt-auto">
+                                <a href="https://github.com/hiral1609" target="_blank"><i data-feather="github"></i> Code</a>
+                                <a href="#" target="_blank"><i data-feather="external-link"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card glass-card reveal" style="transition-delay: 200ms;">
+                        <div class="project-img">
+                            <div class="overlay"></div>
+                            <span>PF</span>
+                        </div>
+                        <div class="project-content">
+                            <h3>Personal Portfolio</h3>
+                            <p>Designed and developed a responsive personal portfolio website showcasing skills, projects, education, certifications, achievements, and contact information with a modern UI and smooth animations.</p>
+                            <div class="tech-tags">
+                                <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Node.js</span>
+                            </div>
+                            <div class="project-links mt-auto">
+                                <a href="https://github.com/hiral1609" target="_blank"><i data-feather="github"></i> Code</a>
+                                <a href="#" target="_blank"><i data-feather="external-link"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education section bg-alternate">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>My <span class="text-gradient">Education</span></h2>
+                    <div class="header-line"></div>
+                </div>
+                
+                <div class="education-card glass-card reveal">
+                    <div class="edu-icon-wrapper">
+                        <i data-feather="book-open"></i>
+                    </div>
+                    <div class="edu-content">
+                        <h3>Bachelor of Technology (B.Tech)</h3>
+                        <h4>Acropolis Institute of Technology and Research</h4>
+                        <div class="edu-details">
+                            <div class="detail-item">
+                                <i data-feather="calendar"></i>
+                                <span>Expected Graduation: <strong>2027</strong></span>
+                            </div>
+                            <div class="detail-item">
+                                <i data-feather="award"></i>
+                                <span>Current CGPA: <strong>7.14</strong></span>
+                            </div>
+                            <div class="detail-item">
+                                <i data-feather="award"></i>
+                                <span>Latest SGPA: <strong>8.0</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="certifications section">
+            <div class="container">
+                <div class="certs-achieve-container">
+                    
+                    <div class="certs-col reveal-left">
+                        <h2 class="sub-heading"><i data-feather="check-circle" class="icon-primary"></i> Certifications</h2>
+                        <div class="sub-header-line"></div>
+                        <ul class="list-cards">
+                            <li class="list-card glass-card">
+                                <div class="list-icon icon-primary"><i data-feather="check-circle"></i></div>
+                                <p>AWS Certified Solutions Architect - Associate (SAA-C03 - English) .</p>
+                            </li>
+                            <li class="list-card glass-card">
+                                <div class="list-icon icon-primary"><i data-feather="check-circle"></i></div>
+                                <p>NPTEL: Operating System Fundamentals</p>
+                            </li>
+                            <li class="list-card glass-card">
+                                <div class="list-icon icon-primary"><i data-feather="check-circle"></i></div>
+                                <p>NVDIA: Fundamentals Of Deep Learning</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="achieve-col reveal-right">
+                        <h2 class="sub-heading"><i data-feather="award" class="icon-accent"></i> Achievements</h2>
+                        <div class="sub-header-line accent-line"></div>
+                        <ul class="list-cards">
+                            <li class="list-card glass-card">
+                                <div class="list-icon icon-accent"><i data-feather="award"></i></div>
+                                <p>Solved 50+ problems on LeetCode.</p>
+                            </li>
+                            <li class="list-card glass-card">
+                                <div class="list-icon icon-accent"><i data-feather="award"></i></div>
+                                <p>Actively participated in college events during academics.</p>
+                            </li>
+                            <li class="list-card glass-card">
+                                <div class="list-icon icon-accent"><i data-feather="award"></i></div>
+                                <p>Participated in Tech-o-tsav 2025, a National-Level Technical Fest organized by the college.</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section bg-alternate">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Get In <span class="text-gradient">Touch</span></h2>
+                    <div class="header-line"></div>
+                    <p class="subtitle">Have a question or want to work together? Feel free to reach out to me!</p>
+                </div>
+
+                <div class="contact-container">
+                    <div class="contact-info reveal-left">
+                        <div class="contact-item glass-card">
+                            <div class="contact-icon"><i data-feather="mail"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:hiralshah0916@gmail.com">hiralshah0916@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item glass-card">
+                            <div class="contact-icon"><i data-feather="phone"></i></div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>9098056090</p>
+                            </div>
+                        </div>
+                        <div class="contact-item glass-card">
+                            <div class="contact-icon github-icon"><i data-feather="github"></i></div>
+                            <div>
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/hiral1609" target="_blank">github.com/hiral1609</a>
+                            </div>
+                        </div>
+                        <div class="contact-item glass-card">
+                            <div class="contact-icon linkedin-icon"><i data-feather="linkedin"></i></div>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/hiral-shah-68589033a/" target="_blank">hiral-shah-68589033a</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper reveal-right">
+                        <form id="contact-form" class="glass-card form-card">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required placeholder="Your Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required placeholder="Subject">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Your Message..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span>Send Message</span> <i data-feather="send"></i>
+                            </button>
+                            <div id="form-status" class="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <span class="logo-accent">Hiral</span><span class="logo-text">Shah.</span>
+                    </a>
+                    <p>Building responsive, scalable, and user-friendly web applications using modern web technologies.</p>
+                    <p class="copyright">&copy; <span id="year"></span> Hiral Shah. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-icons">
+                        <a href="https://github.com/hiral1609" target="_blank"><i data-feather="github"></i></a>
+                        <a href="https://www.linkedin.com/in/hiral-shah-68589033a/" target="_blank"><i data-feather="linkedin"></i></a>
+                        <a href="mailto:hiralshah0916@gmail.com"><i data-feather="mail"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <button id="back-to-top" class="back-to-top" aria-label="Back to Top">
+                <i data-feather="arrow-up"></i>
+            </button>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
